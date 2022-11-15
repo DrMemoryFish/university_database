@@ -205,7 +205,7 @@ FROM fees;
 
 SELECT *
 FROM application 
-WHERE accepted = 1 AND CourseAppliedFor != 11;
+WHERE accepted = 1 AND CourseAppliedFor = 11 AND StudentID = 0;
 
 --Modify the select statement from the previous example into an insert statement and insert the data into the student table
 
@@ -219,9 +219,11 @@ AFTER CourseAppliedFor;
 
 --then run this 
 
-INSERT INTO student(Forenames, Surname, CourseAppliedFor, accepted)
-SELECT Forenames, Surname, CourseAppliedFor, accepted
-FROM application;
+
+INSERT INTO student (CourseID, Forenames, surname, EmailAddress, accepted)
+SELECT CourseAppliedFor, Forenames, surname, EmailAddress, accepted
+FROM application
+WHERE CourseAppliedFor = 11 AND StudentID = 0 AND accepted = 1;
 
 --to check run this
 
@@ -255,3 +257,6 @@ UPDATE application JOIN (
   
   ) temp USING (accepted)
 SET accepted = 1;
+
+
+
