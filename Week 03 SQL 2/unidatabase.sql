@@ -51,8 +51,6 @@ CREATE TABLE `application` (
   CONSTRAINT `application_ibfk_1` FOREIGN KEY (`CourseAppliedFor`) REFERENCES `course` (`CourseID`)
 ) ;
 
-
-
 INSERT INTO `application` VALUES (1,'Helen','Voight','helen.voight@example.com','07113863093',6,'2020-03-01',417,1),(2,'Dan','Torn','dan.torn@example.com','07343358643',10,'2020-03-01',418,1),(3,'Mena','Temple','mena.temple@example.com','07423198442',10,'2020-03-01',453,1),(4,'Michelle','Mcconaughey','michelle.mcconaughey@example.com','07731140180',7,'2020-03-01',470,1),(5,'Woody','Jolie','woody.jolie@example.com','07678560032',8,'2020-03-01',482,1),(6,'Kenneth','Pesci','kenneth.pesci@example.com','07398910896',6,'2020-03-01',488,1),(7,'Kirsten','Akroyd','kirsten.akroyd@example.com','07478406652',12,'2020-03-01',492,1),(8,'Daryl','Wahlberg','daryl.wahlberg@example.com','07306697895',1,'2020-03-01',495,1),(9,'Susan','Davis','susan.davis@example.com','07143146363',3,'2020-05-01',510,1),(10,'Russell','Bacall','russell.bacall@example.com','07642944749',3,'2020-05-01',512,1),(11,'Liza','Bergman','liza.bergman@example.com','07477342493',11,'2020-05-01',521,1),(12,'Julianne','Dench','julianne.dench@example.com','07250478756',11,'2020-05-01',523,1),(13,'Albert','Nolte','albert.nolte@example.com','07744154365',9,'2020-05-01',525,1),(14,'Rita','Reynolds','rita.reynolds@example.com','07763042958',8,'2020-05-01',535,1),(15,'Morgan','Williams','morgan.williams@example.com','07400678536',8,'2020-05-01',537,1),(16,'Vivien','Basinger','vivien.basinger@example.com','07214236374',3,'2020-05-01',558,1),(17,'Lisa','Monroe','lisa.monroe@example.com','07229556758',8,'2020-05-01',578,1),(18,'Rock','Dukakis','rock.dukakis@example.com','07770279042',2,'2020-05-01',588,1),(19,'Meryl','Allen','meryl.allen@example.com','07568130373',2,'2020-05-01',594,1),(20,'Reese','West','reese.west@example.com','07367397807',9,'2020-05-01',597,1),(32,'John','Smith','john.smith@example.com','07102718993',7,'2020-05-12',0,0),(33,'Sam','Taylor','sam.taylor@example.com','07148971909',11,'2020-02-12',0,0),(34,'Mary','Adams','mary.adams@example.com','07284554234',4,'2020-04-26',0,0),(35,'Nelson','Agholor','nelson.agholor@example.com','07249695274',NULL,'2020-03-01',0,0),(36,'Rosetta','Aguayo','rosetta.aguayo@example.com','07321922632',4,'2020-06-14',0,0),(37,'Henry','Anderson','henry.anderson@example.com','07318048334',10,'2020-01-17',0,0),(38,'Danielle','Andrews','danielle.andrews@example.com','07537819481',9,'2020-03-09',0,0),(39,'Devin','Asiasi','devin.asiasi@example.com','07576010112',8,'2020-04-08',0,0),(40,'Jessica','Bailey','jessica.bailey@example.com','07598687482',2,'2020-01-19',0,0),(41,'Jasmine','Bentley','jasmine.bentley@example.com','07371777718',8,'2020-05-13',0,0),(42,'Montravius','Zuber','montravius.zuber@example.com','07370723330',7,'2020-04-03',0,0),(43,'Nelson','Zelem','nelson.zelem@example.com','07868619861',8,'2020-06-02',0,0),(44,'Henry','Wynn','henry.wynn@example.com','07808104973',9,'2020-01-06',0,0),(45,'David','Wubben-Moy','david.wubben-moy@example.com','07343808259',6,'2020-04-12',0,0),(46,'Devin','Wise','devin.wise@example.com','07166942677',12,'2020-02-28',0,0),(47,'Jake','Winovich','jake.winovich@example.com','07330702346',8,'2020-02-17',0,0),(48,'Christian','Williamson','christian.williamson@example.com','07484455857',12,'2020-05-14',0,0),(49,'JaWhaun','Williams','jawhaun.williams@example.com','07423125924',9,'2020-03-07',0,0),(50,'Rashod','Williams','rashod.williams@example.com','07398750082',12,'2020-01-29',0,0),(51,'Justin','Wilkerson','justin.wilkerson@example.com','07344881056',4,'2020-04-25',0,0),(52,'Joshuah','White','joshuah.white@example.com','07839367856',5,'2020-05-11',0,1),(53,'Brandon','White','brandon.white@example.com','07586695987',10,'2020-05-04',0,0),(54,'Kendrick','Walsh','kendrick.walsh@example.com','07538340459',11,'2020-08-24',0,0),(55,'Tashawn','Virgin','tashawn.virgin@example.com','07282177739',7,'2020-03-30',0,0),(56,'Trent','Van','trent.van@example.com','07772556092',3,'2020-04-19',0,0),(57,'Myles','Uche','myles.uche@example.com','07587100659',6,'2020-05-18',0,0),(58,'Yodny','Turner','yodny.turner@example.com','07602098481',11,'2020-02-16',0,0),(59,'Joe','Toone','joe.toone@example.com','07265427006',5,'2020-02-09',0,0),(60,'Adrian','Thurman','adrian.thurman@example.com','07755017327',8,'2020-06-06',0,0),(61,'Byron','Taylor','byron.taylor@example.com','07554055656',3,'2020-06-06',0,0),(62,'Korey','Stokes','korey.stokes@example.com','07843788456',2,'2020-01-18',0,0),(63,'Carl','Stidham','carl.stidham@example.com','07737563584',1,'2020-05-31',0,0),(64,'Cody','Stevenson','cody.stevenson@example.com','07798213360',9,'2020-01-29',0,0),(65,'Kyle','Stanway','kyle.stanway@example.com','07685404583',1,'2020-02-22',0,0),(66,'James','Staniforth','james.staniforth@example.com','07243083603',7,'2020-03-27',0,0),(67,'Nick','Spence','nick.spence@example.com','07323314295',6,'2020-06-22',0,0),(68,'Troy','Sonnett','troy.sonnett@example.com','07478395517',2,'2020-03-17',0,0),(69,'Tyler','Smith','tyler.smith@example.com','07613140776',7,'2020-03-27',0,0),(70,'Stephon','Smith','stephon.smith@example.com','07383733874',3,'2020-03-28',0,0),(71,'Davon','Slater','davon.slater@example.com','07354063893',8,'2020-02-04',0,0),(72,'Lawrence','Simon','lawrence.simon@example.com','07210674138',2,'2020-03-10',0,0),(73,'Marvin','Sherman','marvin.sherman@example.com','07659153304',11,'2020-04-11',0,0),(74,'Terez','Scott','terez.scott@example.com','07379030546',3,'2020-06-27',0,0),(75,'Damien','Sauerbrunn','damien.sauerbrunn@example.com','07811862091',5,'2020-04-28',0,0),(76,'Keal','Salmon','keal.salmon@example.com','07379369615',9,'2020-01-14',0,0),(77,'Hunter','Russo','hunter.russo@example.com','07865540242',7,'2020-05-14',0,0),(78,'Justin','Ross','justin.ross@example.com','07113299070',1,'2020-01-15',0,0),(79,'Donta','Ross','donta.ross@example.com','07199409493',9,'2020-05-09',0,0),(80,'Brian','Roebuck','brian.roebuck@example.com','07526858169',8,'2020-05-30',0,0),(81,'J.C.','Redmond','j.c..redmond@example.com','07217950961',12,'2020-04-19',0,0),(82,'Michael','Rapinoe','michael.rapinoe@example.com','07155133598',12,'2020-03-22',0,0),(83,'Anfernee','Ramsey','anfernee.ramsey@example.com','07684522243',7,'2020-03-05',0,0),(84,'Jakob','Prince','jakob.prince@example.com','07489825548',NULL,'2020-04-13',0,0),(85,'Jonathan','Press','jonathan.press@example.com','07496397112',4,'2020-02-24',0,0),(86,'Mac','Phillips','mac.phillips@example.com','07870319339',NULL,'2020-02-23',0,0),(87,'Matt','Perkins','matt.perkins@example.com','07165753345',8,'2020-06-21',0,0),(88,'Ted','Parris','ted.parris@example.com','07839806137',11,'2020-08-29',0,0),(89,'Dalton','Onwenu','dalton.onwenu@example.com','07207733954',11,'2020-08-19',0,0),(90,'Brandon','Olszewski','brandon.olszewski@example.com','07183613738',8,'2020-01-18',0,0),(91,'Matt','O’Hara','matt.o’hara@example.com','07711083595',1,'2020-03-12',0,0),(92,'Harvey','Nordin','harvey.nordin@example.com','07436197851',10,'2020-03-20',0,0),(93,'Marcus','Nobbs','marcus.nobbs@example.com','07768774896',8,'2020-02-27',0,0),(94,'Shaq','Nixon','shaq.nixon@example.com','07878793982',8,'2020-04-04',0,0),(95,'Devin','Newton','devin.newton@example.com','07505523453',5,'2020-02-21',0,0),(96,'Cameron','Naeher','cameron.naeher@example.com','07201318326',12,'2020-06-21',0,0),(97,'Raekwon','Murray','raekwon.murray@example.com','07679375338',3,'2020-03-19',0,0),(98,'Jakobi','Morgan','jakobi.morgan@example.com','07894786016',8,'2020-04-21',0,0),(99,'Sony','Morgan','sony.morgan@example.com','07606563947',1,'2020-01-28',0,0),(100,'Jalen','Mills','jalen.mills@example.com','07725198204',1,'2020-04-27',0,0),(101,'Bill','Michel','bill.michel@example.com','07833447800',8,'2020-06-15',0,0),(102,'Cam','Meyers','cam.meyers@example.com','07104029752',4,'2020-02-13',0,0),(103,'Tre','Mewis','tre.mewis@example.com','07573515927',12,'2020-04-23',0,0),(104,'Quinn','Mewis','quinn.mewis@example.com','07631560370',3,'2020-05-10',0,0),(105,'Gunner','Mead','gunner.mead@example.com','07168744708',2,'2020-05-24',0,0),(106,'Mike','McMillan','mike.mcmillan@example.com','07385449700',3,'2020-06-27',0,0),(107,'Ronnie','McManus','ronnie.mcmanus@example.com','07464874264',10,'2020-04-12',0,0),(108,'Adrian','McGrone','adrian.mcgrone@example.com','07452415692',5,'2020-05-26',0,0),(109,'R.J.','McCourty','r.j..mccourty@example.com','07206850224',10,'2020-02-13',0,0),(110,'Alex','Mason','alex.mason@example.com','07523728693',2,'2020-05-28',0,0),(111,'Angelo','Martin','angelo.martin@example.com','07683395574',11,'2020-09-13',0,0),(112,'Devin','MacIver','devin.maciver@example.com','07248754995',5,'2020-02-21',0,0),(113,'Will','Macario','will.macario@example.com','07746940613',6,'2020-04-25',0,0),(114,'Matthew','Lloyd','matthew.lloyd@example.com','07331548053',11,'2020-09-27',0,0),(115,'Devin','Lavelle','devin.lavelle@example.com','07460570062',4,'2020-03-01',0,0),(116,'Jonnu','Langi','jonnu.langi@example.com','07568858922',5,'2020-04-29',0,0),(117,'Akeem','LaCosse','akeem.lacosse@example.com','07317347098',6,'2020-06-13',0,0),(118,'Rhamondre','Krueger','rhamondre.krueger@example.com','07724919933',10,'2020-03-20',0,0),(119,'Jarrett','Kirby','jarrett.kirby@example.com','07895888844',12,'2020-01-07',0,0),(120,'J.J.','King','j.j..king@example.com','07787814166',8,'2020-04-24',0,0),(121,'Nick','Kelly','nick.kelly@example.com','07843691601',4,'2020-06-06',0,0),(122,'Josh','Keene','josh.keene@example.com','07245139783',11,'2020-05-25',0,1),(123,'Kyle','Karras','kyle.karras@example.com','07642931103',7,'2020-01-05',0,0),(124,'Dee','Judon','dee.judon@example.com','07129738524',3,'2020-04-11',0,0),(125,'James','Jones','james.jones@example.com','07202647498',3,'2020-05-25',0,0),(126,'Kristian','Jones','kristian.jones@example.com','07233811665',4,'2020-03-08',0,0),(127,'Joejuan','Johnson','joejuan.johnson@example.com','07822900453',10,'2020-05-26',0,0),(128,'Chase','Jennings','chase.jennings@example.com','07403420041',6,'2020-05-17',0,0),(129,'Deatrich','James','deatrich.james@example.com','07834586922',NULL,'2020-06-09',0,0),(130,'Isaiah','Jackson','isaiah.jackson@example.com','07812192839',6,'2020-04-07',0,0),(131,'Isaiah','Jackson','isaiah.jackson@example.com','07582498872',NULL,'2020-01-22',0,0),(132,'Patrick','Hoyer','patrick.hoyer@example.com','07689355828',11,'2020-01-12',0,1),(133,'Julian','Houghton','julian.houghton@example.com','07247970694',NULL,'2020-03-27',0,0),(134,'Shilique','Horan','shilique.horan@example.com','07641232753',11,'2020-08-14',0,0),(135,'Jermaine','Hightower','jermaine.hightower@example.com','07205831110',8,'2020-06-19',0,0),(136,'John','Herron','john.herron@example.com','07384612273',6,'2020-03-12',0,0),(137,'Adrianna','Henry','adrianna.henry@example.com','07269022484',1,'2020-02-20',0,0),(138,'Alyssa','Hemp','alyssa.hemp@example.com','07558192286',6,'2020-05-04',0,0),(139,'Abby','Heath','abby.heath@example.com','07850014839',4,'2020-04-01',0,0),(140,'Tierna','Harry','tierna.harry@example.com','07279037552',NULL,'2020-04-25',0,0),(141,'Crystal','Harris','crystal.harris@example.com','07558658320',11,'2020-05-15',0,1),(142,'Kelley','Hampton','kelley.hampton@example.com','07154822676',3,'2020-06-06',0,0),(143,'Becky','Hall','becky.hall@example.com','07606109023',6,'2020-02-25',0,1),(144,'Emily','Hall','emily.hall@example.com','07432177394',2,'2020-06-22',0,0),(145,'Julie','Guy','julie.guy@example.com','07835570716',10,'2020-01-30',0,0),(146,'Lindsey','Greenwood','lindsey.greenwood@example.com','07732518117',3,'2020-03-02',0,0),(147,'Rose','Godchaux','rose.godchaux@example.com','07631139941',NULL,'2020-04-05',0,0),(148,'Kristie','Gilmore','kristie.gilmore@example.com','07794206828',12,'2020-04-08',0,0),(149,'Samantha','Gaffney','samantha.gaffney@example.com','07740317782',8,'2020-01-15',0,0),(150,'Tobin','Fumagalli','tobin.fumagalli@example.com','07238870462',10,'2020-03-20',0,0),(151,'Carli','Franch','carli.franch@example.com','07156408889',2,'2020-02-12',0,0),(152,'Alex','Folk','alex.folk@example.com','07829271648',4,'2020-05-21',0,0),(153,'Christen','Fisk','christen.fisk@example.com','07570806486',4,'2020-05-26',0,0),(154,'Megan','Ferentz','megan.ferentz@example.com','07492776705',3,'2020-04-09',0,0),(155,'Jane','Ertz','jane.ertz@example.com','07856282084',1,'2020-02-22',0,0),(156,'Casey','England','casey.england@example.com','07278157552',4,'2020-01-16',0,0),(157,'Catarina','Eluemunor','catarina.eluemunor@example.com','07650549195',7,'2020-01-19',0,0),(158,'Lynn','Edelman','lynn.edelman@example.com','07272228678',8,'2020-06-11',0,0),(159,'Ellie','Dunn','ellie.dunn@example.com','07894485178',8,'2020-05-31',0,0),(160,'Sandy','Dugger','sandy.dugger@example.com','07430219321',9,'2020-06-20',0,0),(161,'Hannah','Davis','hannah.davis@example.com','07133903485',7,'2020-04-03',0,0),(162,'Emily','Davis','emily.davis@example.com','07177987641',7,'2020-01-14',0,0),(163,'Steph','Davidson','steph.davidson@example.com','07741888623',11,'2020-02-17',0,1),(164,'Lucy','Daly','lucy.daly@example.com','07793243295',5,'2020-01-24',0,0),(165,'Demi','Dahlkemper','demi.dahlkemper@example.com','07712012901',1,'2020-05-24',0,0),(166,'Millie','Cunningham','millie.cunningham@example.com','07590897060',12,'2020-05-24',0,0),(167,'Rachel','Cowart','rachel.cowart@example.com','07121546374',3,'2020-03-31',0,0),(168,'Leah','Coombs','leah.coombs@example.com','07161860688',1,'2020-05-16',0,0),(169,'Lotte','Colbert','lotte.colbert@example.com','07113365616',11,'2020-06-22',0,0),(170,'Jill','Chung','jill.chung@example.com','07450049366',NULL,'2020-02-04',0,0),(171,'Keira','Christiansen','keira.christiansen@example.com','07205424951',6,'2020-05-07',0,0),(172,'Niamh','Charles','niamh.charles@example.com','07750476674',2,'2020-04-22',0,0),(173,'Ellen','Cardona','ellen.cardona@example.com','07566307613',9,'2020-03-06',0,0),(174,'Nikita','Campbell','nikita.campbell@example.com','07162557983',4,'2020-03-20',0,0),(175,'Fran','Calhoun','fran.calhoun@example.com','07717455395',3,'2020-03-04',0,0),(176,'Georgia','Cajuste','georgia.cajuste@example.com','07418690008',9,'2020-04-18',0,0),(177,'Lauren','Bryant','lauren.bryant@example.com','07482766896',6,'2020-06-06',0,0),(178,'Karen','Brown','karen.brown@example.com','07882836549',3,'2020-04-07',0,0),(179,'Alex','Bronze','alex.bronze@example.com','07553477950',NULL,'2020-01-09',0,0),(180,'Esme','Bright','esme.bright@example.com','07283254733',9,'2020-03-25',0,0),(181,'Millie','Bower','millie.bower@example.com','07661877865',6,'2020-05-07',0,1),(182,'Abbie','Bourne','abbie.bourne@example.com','07682634411',11,'2020-08-20',0,0),(183,'Grace','Bolden','grace.bolden@example.com','07305026839',3,'2020-05-31',0,0),(184,'Jordan','Bledsoe','jordan.bledsoe@example.com','07177050374',NULL,'2020-05-31',0,0),(185,'Lucy','Bethel','lucy.bethel@example.com','07458834605',9,'2020-06-09',0,0),(186,'Laura','Berry','laura.berry@example.com','07685794904',12,'2020-04-08',0,0),(187,'Katie','Bentley','katie.bentley@example.com','07216792137',7,'2020-01-12',0,0),(188,'Izzy','Barmore','izzy.barmore@example.com','07899470858',10,'2020-03-18',0,0),(189,'Ella','Bardsley','ella.bardsley@example.com','07648875185',10,'2020-02-25',0,0),(190,'Beth','Bailey','beth.bailey@example.com','07310686288',NULL,'2020-06-23',0,0),(191,'Bethany','Babajide','bethany.babajide@example.com','07241061061',11,'2020-08-02',0,0),(192,'Chloe','Asiasi','chloe.asiasi@example.com','07443800375',3,'2020-02-13',0,0),(193,'Ebony','Andrews','ebony.andrews@example.com','07880977643',7,'2020-01-22',0,0),(194,'Rinsola','Anderson','rinsola.anderson@example.com','07380491363',7,'2020-02-15',0,0),(195,'Lauren','Agholor','lauren.agholor@example.com','07484178413',12,'2020-02-08',0,0),(196,'Alessia','Adams','alessia.adams@example.com','07272948118',NULL,'2020-05-25',0,0);
 
 
@@ -155,7 +153,7 @@ from fees;
     --work out the average cost of the fulltime fees.
 
 SELECT AVG(FullTimeFee)
-FROM fees
+FROM fees;
 
 --Core Learning 1.2
 
@@ -194,3 +192,95 @@ SELECT AVG(FullTimeFee)
 FROM fees
 )
 ORDER BY FullTimeFee ASC;
+
+--Core Learning 2
+
+  --Obtain a list of applications where the CourseID is unknown
+
+SELECT *
+FROM application
+WHERE CourseAppliedFor IS NULL;
+
+
+  --Obtain a list of students where their CourseID is not unknown
+
+SELECT Forenames, Surname
+FROM application
+WHERE CourseAppliedFor IS NOT NULL;
+
+  --Obtain a list of students whom were born in the month of June 2002
+
+SELECT Forenames, Surname, DateOfBirth
+FROM student
+WHERE MONTH(DateOfBirth) = 6 and YEAR(DateOfBirth) = 2002;
+
+  --Obtain a list of applications where CourseID is unknown and the applications where made between 01/04/2020 and 31/07/2020
+
+SELECT *
+FROM application
+WHERE CourseAppliedFor IS NULL
+AND DateOfApplication BETWEEN '2020-04-01' AND '2020-07-31' ;
+
+DROP TABLE application;
+
+SELECT *
+FROM APPLICATION
+WHERE DateOfApplication = NULL
+BETWEEN 2022-04-31 AND 2022-04-31;
+
+
+CourseAppliedFor >= 2022-04-01 AND CourseAppliedFor <= 2022-04-31
+
+--Core Learning 3
+
+  --Obtain the number of modules which are assigned to each course
+
+SELECT COUNT(ModuleName), Subject, CourseID
+FROM module
+GROUP BY Subject;
+
+  --Retrieve Information on the number of successful applications per course
+
+SELECT CourseAppliedFor, COUNT(accepted)
+FROM application
+WHERE accepted = 1 
+GROUP BY CourseAppliedFor;
+
+  --Find the average Membership Fee of Student Clubs by the ID of the Staff member (Lecturer) supervising course
+
+SELECT ClubName, AVG(MembershipFee), SupervisingStaff AS "number of staff"
+FROM club
+GROUP BY SupervisingStaff;
+
+  --Find the Sum total of Joining Fees for all active clubs by Staff Member supervising them
+  --ive selected active to prove the club is still active.
+
+SELECT SupervisingStaff, ClubName, SUM(JoiningFee), active 
+FROM club
+WHERE Active = 1
+GROUP BY SupervisingStaff
+
+--Core Learning 4
+
+  --Obtain a list of all modules and the names of any courses they may be taught (include modules without courses)
+
+SELECT ModuleName, CourseName
+FROM module
+INNER JOIN course
+ON module.CourseID = course.CourseID
+GROUP BY ModuleNameim scare
+
+  --Obtain a list of students along with any related application numbers if they have them
+
+SELECT student.Forenames, student.Surname, applicationID
+FROM student
+INNER JOIN application
+ON student.StudentID = application.StudentID
+
+  --Obtain the Class ID, Class Date and Feedback score of the latest class scheduled for each Class ID
+
+SELECT class.ClassID, class.CDate, schedule.FeedbackScore
+FROM schedule AS schedule
+INNER JOIN schedule AS class
+ON schedule.ScheduleID = class.ClassID
+GROUP BY class.ClassID
