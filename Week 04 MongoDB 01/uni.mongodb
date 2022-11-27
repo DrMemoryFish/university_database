@@ -1,0 +1,1293 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('uni');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.application.drop();
+
+// Insert a few documents into the sales collection.
+db.application.insertMany([
+   
+{
+    "applicationID": 1,
+    "Forenames": "Helen",
+    "Surname": "Voight",
+    "EmailAddress": "helen.voight@example.com",
+    "ContactNumber": "07113863093",
+    "CourseAppliedFor": 6,
+    "DateOfApplication": "2020-03-01",
+    "StudentID": 417,
+    "accepted": 1
+  },
+  {
+    "applicationID": 2,
+    "Forenames": "Dan",
+    "Surname": "Torn",
+    "EmailAddress": "dan.torn@example.com",
+    "ContactNumber": "07343358643",
+    "CourseAppliedFor": 10,
+    "DateOfApplication": "2020-03-01",
+    "StudentID": 418,
+    "accepted": 1
+  },
+  {
+    "applicationID": 3,
+    "Forenames": "Mena",
+    "Surname": "Temple",
+    "EmailAddress": "mena.temple@example.com",
+    "ContactNumber": "07423198442",
+    "CourseAppliedFor": 10,
+    "DateOfApplication": "2020-03-01",
+    "StudentID": 453,
+    "accepted": 1
+  },
+  {
+    "applicationID": 4,
+    "Forenames": "Michelle",
+    "Surname": "Mcconaughey",
+    "EmailAddress": "michelle.mcconaughey@example.com",
+    "ContactNumber": "07731140180",
+    "CourseAppliedFor": 7,
+    "DateOfApplication": "2020-03-01",
+    "StudentID": 470,
+    "accepted": 1
+  },
+  {
+    "applicationID": 5,
+    "Forenames": "Woody",
+    "Surname": "Jolie",
+    "EmailAddress": "woody.jolie@example.com",
+    "ContactNumber": "07678560032",
+    "CourseAppliedFor": 8,
+    "DateOfApplication": "2020-03-01",
+    "StudentID": 482,
+    "accepted": 1
+  },
+  {
+    "applicationID": 6,
+    "Forenames": "Kenneth",
+    "Surname": "Pesci",
+    "EmailAddress": "kenneth.pesci@example.com",
+    "ContactNumber": "07398910896",
+    "CourseAppliedFor": 6,
+    "DateOfApplication": "2020-03-01",
+    "StudentID": 488,
+    "accepted": 1
+  },
+  {
+    "applicationID": 7,
+    "Forenames": "Kirsten",
+    "Surname": "Akroyd",
+    "EmailAddress": "kirsten.akroyd@example.com",
+    "ContactNumber": "07478406652",
+    "CourseAppliedFor": 12,
+    "DateOfApplication": "2020-03-01",
+    "StudentID": 492,
+    "accepted": 1
+  },
+  {
+    "applicationID": 8,
+    "Forenames": "Daryl",
+    "Surname": "Wahlberg",
+    "EmailAddress": "daryl.wahlberg@example.com",
+    "ContactNumber": "07306697895",
+    "CourseAppliedFor": 1,
+    "DateOfApplication": "2020-03-01",
+    "StudentID": 495,
+    "accepted": 1
+  },
+  {
+    "applicationID": 9,
+    "Forenames": "Susan",
+    "Surname": "Davis",
+    "EmailAddress": "susan.davis@example.com",
+    "ContactNumber": "07143146363",
+    "CourseAppliedFor": 3,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 510,
+    "accepted": 1
+  },
+  {
+    "applicationID": 10,
+    "Forenames": "Russell",
+    "Surname": "Bacall",
+    "EmailAddress": "russell.bacall@example.com",
+    "ContactNumber": "07642944749",
+    "CourseAppliedFor": 3,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 512,
+    "accepted": 1
+  },
+  {
+    "applicationID": 11,
+    "Forenames": "Liza",
+    "Surname": "Bergman",
+    "EmailAddress": "liza.bergman@example.com",
+    "ContactNumber": "07477342493",
+    "CourseAppliedFor": 11,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 521,
+    "accepted": 1
+  },
+  {
+    "applicationID": 12,
+    "Forenames": "Julianne",
+    "Surname": "Dench",
+    "EmailAddress": "julianne.dench@example.com",
+    "ContactNumber": "07250478756",
+    "CourseAppliedFor": 11,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 523,
+    "accepted": 1
+  },
+  {
+    "applicationID": 13,
+    "Forenames": "Albert",
+    "Surname": "Nolte",
+    "EmailAddress": "albert.nolte@example.com",
+    "ContactNumber": "07744154365",
+    "CourseAppliedFor": 9,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 525,
+    "accepted": 1
+  },
+  {
+    "applicationID": 14,
+    "Forenames": "Rita",
+    "Surname": "Reynolds",
+    "EmailAddress": "rita.reynolds@example.com",
+    "ContactNumber": "07763042958",
+    "CourseAppliedFor": 8,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 535,
+    "accepted": 1
+  },
+  {
+    "applicationID": 15,
+    "Forenames": "Morgan",
+    "Surname": "Williams",
+    "EmailAddress": "morgan.williams@example.com",
+    "ContactNumber": "07400678536",
+    "CourseAppliedFor": 8,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 537,
+    "accepted": 1
+  },
+  {
+    "applicationID": 16,
+    "Forenames": "Vivien",
+    "Surname": "Basinger",
+    "EmailAddress": "vivien.basinger@example.com",
+    "ContactNumber": "07214236374",
+    "CourseAppliedFor": 3,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 558,
+    "accepted": 1
+  },
+  {
+    "applicationID": 17,
+    "Forenames": "Lisa",
+    "Surname": "Monroe",
+    "EmailAddress": "lisa.monroe@example.com",
+    "ContactNumber": "07229556758",
+    "CourseAppliedFor": 8,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 578,
+    "accepted": 1
+  },
+  {
+    "applicationID": 18,
+    "Forenames": "Rock",
+    "Surname": "Dukakis",
+    "EmailAddress": "rock.dukakis@example.com",
+    "ContactNumber": "07770279042",
+    "CourseAppliedFor": 2,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 588,
+    "accepted": 1
+  },
+  {
+    "applicationID": 19,
+    "Forenames": "Meryl",
+    "Surname": "Allen",
+    "EmailAddress": "meryl.allen@example.com",
+    "ContactNumber": "07568130373",
+    "CourseAppliedFor": 2,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 594,
+    "accepted": 1
+  },
+  {
+    "applicationID": 20,
+    "Forenames": "Reese",
+    "Surname": "West",
+    "EmailAddress": "reese.west@example.com",
+    "ContactNumber": "07367397807",
+    "CourseAppliedFor": 9,
+    "DateOfApplication": "2020-05-01",
+    "StudentID": 597,
+    "accepted": 1
+  },
+  {
+    "applicationID": 32,
+    "Forenames": "John",
+    "Surname": "Smith",
+    "EmailAddress": "john.smith@example.com",
+    "ContactNumber": "07102718993",
+    "CourseAppliedFor": 7,
+    "DateOfApplication": "2020-05-12",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 33,
+    "Forenames": "Sam",
+    "Surname": "Taylor",
+    "EmailAddress": "sam.taylor@example.com",
+    "ContactNumber": "07148971909",
+    "CourseAppliedFor": 11,
+    "DateOfApplication": "2020-02-12",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 34,
+    "Forenames": "Mary",
+    "Surname": "Adams",
+    "EmailAddress": "mary.adams@example.com",
+    "ContactNumber": "07284554234",
+    "CourseAppliedFor": 4,
+    "DateOfApplication": "2020-04-26",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 35,
+    "Forenames": "Nelson",
+    "Surname": "Agholor",
+    "EmailAddress": "nelson.agholor@example.com",
+    "ContactNumber": "07249695274",
+    "CourseAppliedFor": null,
+    "DateOfApplication": "2020-03-01",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 36,
+    "Forenames": "Rosetta",
+    "Surname": "Aguayo",
+    "EmailAddress": "rosetta.aguayo@example.com",
+    "ContactNumber": "07321922632",
+    "CourseAppliedFor": 4,
+    "DateOfApplication": "2020-06-14",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 37,
+    "Forenames": "Henry",
+    "Surname": "Anderson",
+    "EmailAddress": "henry.anderson@example.com",
+    "ContactNumber": "07318048334",
+    "CourseAppliedFor": 10,
+    "DateOfApplication": "2020-01-17",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 38,
+    "Forenames": "Danielle",
+    "Surname": "Andrews",
+    "EmailAddress": "danielle.andrews@example.com",
+    "ContactNumber": "07537819481",
+    "CourseAppliedFor": 9,
+    "DateOfApplication": "2020-03-09",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 39,
+    "Forenames": "Devin",
+    "Surname": "Asiasi",
+    "EmailAddress": "devin.asiasi@example.com",
+    "ContactNumber": "07576010112",
+    "CourseAppliedFor": 8,
+    "DateOfApplication": "2020-04-08",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 40,
+    "Forenames": "Jessica",
+    "Surname": "Bailey",
+    "EmailAddress": "jessica.bailey@example.com",
+    "ContactNumber": "07598687482",
+    "CourseAppliedFor": 2,
+    "DateOfApplication": "2020-01-19",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 41,
+    "Forenames": "Jasmine",
+    "Surname": "Bentley",
+    "EmailAddress": "jasmine.bentley@example.com",
+    "ContactNumber": "07371777718",
+    "CourseAppliedFor": 8,
+    "DateOfApplication": "2020-05-13",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 42,
+    "Forenames": "Montravius",
+    "Surname": "Zuber",
+    "EmailAddress": "montravius.zuber@example.com",
+    "ContactNumber": "07370723330",
+    "CourseAppliedFor": 7,
+    "DateOfApplication": "2020-04-03",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 43,
+    "Forenames": "Nelson",
+    "Surname": "Zelem",
+    "EmailAddress": "nelson.zelem@example.com",
+    "ContactNumber": "07868619861",
+    "CourseAppliedFor": 8,
+    "DateOfApplication": "2020-06-02",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 44,
+    "Forenames": "Henry",
+    "Surname": "Wynn",
+    "EmailAddress": "henry.wynn@example.com",
+    "ContactNumber": "07808104973",
+    "CourseAppliedFor": 9,
+    "DateOfApplication": "2020-01-06",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 45,
+    "Forenames": "David",
+    "Surname": "Wubben-Moy",
+    "EmailAddress": "david.wubben-moy@example.com",
+    "ContactNumber": "07343808259",
+    "CourseAppliedFor": 6,
+    "DateOfApplication": "2020-04-12",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 46,
+    "Forenames": "Devin",
+    "Surname": "Wise",
+    "EmailAddress": "devin.wise@example.com",
+    "ContactNumber": "07166942677",
+    "CourseAppliedFor": 12,
+    "DateOfApplication": "2020-02-28",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 47,
+    "Forenames": "Jake",
+    "Surname": "Winovich",
+    "EmailAddress": "jake.winovich@example.com",
+    "ContactNumber": "07330702346",
+    "CourseAppliedFor": 8,
+    "DateOfApplication": "2020-02-17",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 48,
+    "Forenames": "Christian",
+    "Surname": "Williamson",
+    "EmailAddress": "christian.williamson@example.com",
+    "ContactNumber": "07484455857",
+    "CourseAppliedFor": 12,
+    "DateOfApplication": "2020-05-14",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 49,
+    "Forenames": "JaWhaun",
+    "Surname": "Williams",
+    "EmailAddress": "jawhaun.williams@example.com",
+    "ContactNumber": "07423125924",
+    "CourseAppliedFor": 9,
+    "DateOfApplication": "2020-03-07",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 50,
+    "Forenames": "Rashod",
+    "Surname": "Williams",
+    "EmailAddress": "rashod.williams@example.com",
+    "ContactNumber": "07398750082",
+    "CourseAppliedFor": 12,
+    "DateOfApplication": "2020-01-29",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 51,
+    "Forenames": "Justin",
+    "Surname": "Wilkerson",
+    "EmailAddress": "justin.wilkerson@example.com",
+    "ContactNumber": "07344881056",
+    "CourseAppliedFor": 4,
+    "DateOfApplication": "2020-04-25",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 52,
+    "Forenames": "Joshuah",
+    "Surname": "White",
+    "EmailAddress": "joshuah.white@example.com",
+    "ContactNumber": "07839367856",
+    "CourseAppliedFor": 5,
+    "DateOfApplication": "2020-05-11",
+    "StudentID": 0,
+    "accepted": 1
+  },
+  {
+    "applicationID": 53,
+    "Forenames": "Brandon",
+    "Surname": "White",
+    "EmailAddress": "brandon.white@example.com",
+    "ContactNumber": "07586695987",
+    "CourseAppliedFor": 10,
+    "DateOfApplication": "2020-05-04",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 54,
+    "Forenames": "Kendrick",
+    "Surname": "Walsh",
+    "EmailAddress": "kendrick.walsh@example.com",
+    "ContactNumber": "07538340459",
+    "CourseAppliedFor": 11,
+    "DateOfApplication": "2020-08-24",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 55,
+    "Forenames": "Tashawn",
+    "Surname": "Virgin",
+    "EmailAddress": "tashawn.virgin@example.com",
+    "ContactNumber": "07282177739",
+    "CourseAppliedFor": 7,
+    "DateOfApplication": "2020-03-30",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 56,
+    "Forenames": "Trent",
+    "Surname": "Van",
+    "EmailAddress": "trent.van@example.com",
+    "ContactNumber": "07772556092",
+    "CourseAppliedFor": 3,
+    "DateOfApplication": "2020-04-19",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 57,
+    "Forenames": "Myles",
+    "Surname": "Uche",
+    "EmailAddress": "myles.uche@example.com",
+    "ContactNumber": "07587100659",
+    "CourseAppliedFor": 6,
+    "DateOfApplication": "2020-05-18",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 58,
+    "Forenames": "Yodny",
+    "Surname": "Turner",
+    "EmailAddress": "yodny.turner@example.com",
+    "ContactNumber": "07602098481",
+    "CourseAppliedFor": 11,
+    "DateOfApplication": "2020-02-16",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 59,
+    "Forenames": "Joe",
+    "Surname": "Toone",
+    "EmailAddress": "joe.toone@example.com",
+    "ContactNumber": "07265427006",
+    "CourseAppliedFor": 5,
+    "DateOfApplication": "2020-02-09",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 60,
+    "Forenames": "Adrian",
+    "Surname": "Thurman",
+    "EmailAddress": "adrian.thurman@example.com",
+    "ContactNumber": "07755017327",
+    "CourseAppliedFor": 8,
+    "DateOfApplication": "2020-06-06",
+    "StudentID": 0,
+    "accepted": 0
+  },
+  {
+    "applicationID": 61,
+    "Forenames": "Byron",
+    "Surname": "Taylor",
+    "EmailAddress": "byron.taylor@example.com",
+    "ContactNumber": "07554055656",
+    "CourseAppliedFor": 3,
+    "DateOfApplication": "2020-06-06",
+    "StudentID": 0,
+    "accepted": 0
+  }
+ 
+]);
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.student.drop();
+
+
+// Insert a few documents into the sales collection.
+db.student.insertMany([
+  
+  {
+    "StudentID": 401,
+    "CourseID": 12,
+    "Forenames": "Penelope",
+    "Surname": "Guiness",
+    "DateOfBirth": "2001-12-27",
+    "EmailAddress": "penelope.guiness@example.com"
+  },
+  {
+    "StudentID": 402,
+    "CourseID": 1,
+    "Forenames": "Nick",
+    "Surname": "Wahlberg",
+    "DateOfBirth": "2001-05-17",
+    "EmailAddress": "nick.wahlberg@example.com"
+  },
+  {
+    "StudentID": 403,
+    "CourseID": 9,
+    "Forenames": "Ed",
+    "Surname": "Chase",
+    "DateOfBirth": "2002-05-10",
+    "EmailAddress": "ed.chase@example.com"
+  },
+  {
+    "StudentID": 404,
+    "CourseID": null,
+    "Forenames": "Jennifer",
+    "Surname": "Davis",
+    "DateOfBirth": "2002-08-04",
+    "EmailAddress": "jennifer.davis@example.com"
+  },
+  {
+    "StudentID": 405,
+    "CourseID": 1,
+    "Forenames": "Johnny",
+    "Surname": "Lollobrigida",
+    "DateOfBirth": "2000-09-23",
+    "EmailAddress": "johnny.lollobrigida@example.com"
+  },
+  {
+    "StudentID": 406,
+    "CourseID": 1,
+    "Forenames": "Bette",
+    "Surname": "Nicholson",
+    "DateOfBirth": "2001-10-31",
+    "EmailAddress": "bette.nicholson@example.com"
+  },
+  {
+    "StudentID": 407,
+    "CourseID": 7,
+    "Forenames": "Grace",
+    "Surname": "Mostel",
+    "DateOfBirth": "2002-04-20",
+    "EmailAddress": "grace.mostel@example.com"
+  },
+  {
+    "StudentID": 408,
+    "CourseID": 3,
+    "Forenames": "Matthew",
+    "Surname": "Johansson",
+    "DateOfBirth": "2001-03-06",
+    "EmailAddress": "matthew.johansson@example.com"
+  },
+  {
+    "StudentID": 409,
+    "CourseID": 5,
+    "Forenames": "Joe",
+    "Surname": "Swank",
+    "DateOfBirth": "2001-10-26",
+    "EmailAddress": "joe.swank@example.com"
+  },
+  {
+    "StudentID": 410,
+    "CourseID": 7,
+    "Forenames": "Christian",
+    "Surname": "Gable",
+    "DateOfBirth": "2001-03-19",
+    "EmailAddress": "christian.gable@example.com"
+  },
+  {
+    "StudentID": 411,
+    "CourseID": 3,
+    "Forenames": "Zero",
+    "Surname": "Cage",
+    "DateOfBirth": "2000-10-17",
+    "EmailAddress": "zero.cage@example.com"
+  },
+  {
+    "StudentID": 412,
+    "CourseID": 12,
+    "Forenames": "Karl",
+    "Surname": "Berry",
+    "DateOfBirth": "2002-02-09",
+    "EmailAddress": "karl.berry@example.com"
+  },
+  {
+    "StudentID": 413,
+    "CourseID": 6,
+    "Forenames": "Uma",
+    "Surname": "Wood",
+    "DateOfBirth": "2001-10-08",
+    "EmailAddress": "uma.wood@example.com"
+  },
+  {
+    "StudentID": 414,
+    "CourseID": null,
+    "Forenames": "Vivien",
+    "Surname": "Bergen",
+    "DateOfBirth": "2000-10-13",
+    "EmailAddress": "vivien.bergen@example.com"
+  },
+  {
+    "StudentID": 415,
+    "CourseID": 12,
+    "Forenames": "Cuba",
+    "Surname": "Olivier",
+    "DateOfBirth": "2000-09-20",
+    "EmailAddress": "cuba.olivier@example.com"
+  },
+  {
+    "StudentID": 416,
+    "CourseID": 3,
+    "Forenames": "Fred",
+    "Surname": "Costner",
+    "DateOfBirth": "2001-12-14",
+    "EmailAddress": "fred.costner@example.com"
+  },
+  {
+    "StudentID": 417,
+    "CourseID": 6,
+    "Forenames": "Helen",
+    "Surname": "Voight",
+    "DateOfBirth": "2002-07-28",
+    "EmailAddress": "helen.voight@example.com"
+  },
+  {
+    "StudentID": 418,
+    "CourseID": 10,
+    "Forenames": "Dan",
+    "Surname": "Torn",
+    "DateOfBirth": "2002-02-19",
+    "EmailAddress": "dan.torn@example.com"
+  },
+  {
+    "StudentID": 419,
+    "CourseID": 12,
+    "Forenames": "Bob",
+    "Surname": "Fawcett",
+    "DateOfBirth": "2002-03-08",
+    "EmailAddress": "bob.fawcett@example.com"
+  },
+  {
+    "StudentID": 420,
+    "CourseID": 6,
+    "Forenames": "Lucille",
+    "Surname": "Tracy",
+    "DateOfBirth": "2001-04-25",
+    "EmailAddress": "lucille.tracy@example.com"
+  },
+  {
+    "StudentID": 421,
+    "CourseID": 9,
+    "Forenames": "Kirsten",
+    "Surname": "Paltrow",
+    "DateOfBirth": "2001-02-14",
+    "EmailAddress": "kirsten.paltrow@example.com"
+  },
+  {
+    "StudentID": 422,
+    "CourseID": null,
+    "Forenames": "Elvis",
+    "Surname": "Marx",
+    "DateOfBirth": "2001-11-23",
+    "EmailAddress": "elvis.marx@example.com"
+  },
+  {
+    "StudentID": 423,
+    "CourseID": 5,
+    "Forenames": "Sandra",
+    "Surname": "Kilmer",
+    "DateOfBirth": "2002-04-19",
+    "EmailAddress": "sandra.kilmer@example.com"
+  },
+  {
+    "StudentID": 424,
+    "CourseID": 5,
+    "Forenames": "Cameron",
+    "Surname": "Streep",
+    "DateOfBirth": "2002-01-26",
+    "EmailAddress": "cameron.streep@example.com"
+  },
+  {
+    "StudentID": 425,
+    "CourseID": 9,
+    "Forenames": "Kevin",
+    "Surname": "Bloom",
+    "DateOfBirth": "2002-02-15",
+    "EmailAddress": "kevin.bloom@example.com"
+  },
+  {
+    "StudentID": 426,
+    "CourseID": 2,
+    "Forenames": "Rip",
+    "Surname": "Crawford",
+    "DateOfBirth": "2001-01-03",
+    "EmailAddress": "rip.crawford@example.com"
+  },
+  {
+    "StudentID": 427,
+    "CourseID": 4,
+    "Forenames": "Julia",
+    "Surname": "Mcqueen",
+    "DateOfBirth": "2001-02-19",
+    "EmailAddress": "julia.mcqueen@example.com"
+  },
+  {
+    "StudentID": 428,
+    "CourseID": 8,
+    "Forenames": "Woody",
+    "Surname": "Hoffman",
+    "DateOfBirth": "2002-07-05",
+    "EmailAddress": "woody.hoffman@example.com"
+  },
+  {
+    "StudentID": 429,
+    "CourseID": 12,
+    "Forenames": "Alec",
+    "Surname": "Wayne",
+    "DateOfBirth": "2001-09-25",
+    "EmailAddress": "alec.wayne@example.com"
+  },
+  {
+    "StudentID": 430,
+    "CourseID": 5,
+    "Forenames": "Sandra",
+    "Surname": "Peck",
+    "DateOfBirth": "2002-07-27",
+    "EmailAddress": "sandra.peck@example.com"
+  },
+  {
+    "StudentID": 431,
+    "CourseID": 1,
+    "Forenames": "Sissy",
+    "Surname": "Sobieski",
+    "DateOfBirth": "2001-01-03",
+    "EmailAddress": "sissy.sobieski@example.com"
+  },
+  {
+    "StudentID": 432,
+    "CourseID": 7,
+    "Forenames": "Tim",
+    "Surname": "Hackman",
+    "DateOfBirth": "2001-10-03",
+    "EmailAddress": "tim.hackman@example.com"
+  },
+  {
+    "StudentID": 433,
+    "CourseID": 8,
+    "Forenames": "Milla",
+    "Surname": "Peck",
+    "DateOfBirth": "2002-08-23",
+    "EmailAddress": "milla.peck@example.com"
+  },
+  {
+    "StudentID": 434,
+    "CourseID": 4,
+    "Forenames": "Audrey",
+    "Surname": "Olivier",
+    "DateOfBirth": "2001-10-04",
+    "EmailAddress": "audrey.olivier@example.com"
+  },
+  {
+    "StudentID": 435,
+    "CourseID": 10,
+    "Forenames": "Judy",
+    "Surname": "Dean",
+    "DateOfBirth": "2001-12-13",
+    "EmailAddress": "judy.dean@example.com"
+  },
+  {
+    "StudentID": 436,
+    "CourseID": 5,
+    "Forenames": "Burt",
+    "Surname": "Dukakis",
+    "DateOfBirth": "2002-03-13",
+    "EmailAddress": "burt.dukakis@example.com"
+  },
+  {
+    "StudentID": 437,
+    "CourseID": 6,
+    "Forenames": "Val",
+    "Surname": "Bolger",
+    "DateOfBirth": "2002-08-11",
+    "EmailAddress": "val.bolger@example.com"
+  },
+  {
+    "StudentID": 438,
+    "CourseID": 3,
+    "Forenames": "Tom",
+    "Surname": "Mckellen",
+    "DateOfBirth": "2001-06-25",
+    "EmailAddress": "tom.mckellen@example.com"
+  },
+  {
+    "StudentID": 439,
+    "CourseID": 4,
+    "Forenames": "Goldie",
+    "Surname": "Brody",
+    "DateOfBirth": "2002-04-16",
+    "EmailAddress": "goldie.brody@example.com"
+  },
+  {
+    "StudentID": 440,
+    "CourseID": 3,
+    "Forenames": "Johnny",
+    "Surname": "Cage",
+    "DateOfBirth": "2002-07-18",
+    "EmailAddress": "johnny.cage@example.com"
+  },
+  {
+    "StudentID": 441,
+    "CourseID": 1,
+    "Forenames": "Jodie",
+    "Surname": "Degeneres",
+    "DateOfBirth": "2001-05-18",
+    "EmailAddress": "jodie.degeneres@example.com"
+  },
+  {
+    "StudentID": 442,
+    "CourseID": 8,
+    "Forenames": "Tom",
+    "Surname": "Miranda",
+    "DateOfBirth": "2001-10-19",
+    "EmailAddress": "tom.miranda@example.com"
+  },
+  {
+    "StudentID": 443,
+    "CourseID": 4,
+    "Forenames": "Kirk",
+    "Surname": "Jovovich",
+    "DateOfBirth": "2001-01-26",
+    "EmailAddress": "kirk.jovovich@example.com"
+  },
+  {
+    "StudentID": 444,
+    "CourseID": 11,
+    "Forenames": "Nick",
+    "Surname": "Stallone",
+    "DateOfBirth": "2001-05-28",
+    "EmailAddress": "nick.stallone@example.com"
+  },
+  {
+    "StudentID": 445,
+    "CourseID": 5,
+    "Forenames": "Reese",
+    "Surname": "Kilmer",
+    "DateOfBirth": "2001-01-18",
+    "EmailAddress": "reese.kilmer@example.com"
+  },
+  {
+    "StudentID": 446,
+    "CourseID": 7,
+    "Forenames": "Parker",
+    "Surname": "Goldberg",
+    "DateOfBirth": "2002-02-07",
+    "EmailAddress": "parker.goldberg@example.com"
+  },
+  {
+    "StudentID": 447,
+    "CourseID": 6,
+    "Forenames": "Julia",
+    "Surname": "Barrymore",
+    "DateOfBirth": "2002-07-02",
+    "EmailAddress": "julia.barrymore@example.com"
+  },
+  {
+    "StudentID": 448,
+    "CourseID": 6,
+    "Forenames": "Frances",
+    "Surname": "Day-Lewis",
+    "DateOfBirth": "2000-10-25",
+    "EmailAddress": "frances.day-lewis@example.com"
+  },
+  {
+    "StudentID": 449,
+    "CourseID": 10,
+    "Forenames": "Anne",
+    "Surname": "Cronyn",
+    "DateOfBirth": "2000-12-20",
+    "EmailAddress": "anne.cronyn@example.com"
+  },
+  {
+    "StudentID": 450,
+    "CourseID": 4,
+    "Forenames": "Natalie",
+    "Surname": "Hopkins",
+    "DateOfBirth": "2001-02-23",
+    "EmailAddress": "natalie.hopkins@example.com"
+  }
+ 
+]);
+db.class.drop();
+db.class.insertMany([
+  {
+    "ClassID": 1,
+    "LecturerID": 1,
+    "ModuleID": 52
+  },
+  {
+    "ClassID": 2,
+    "LecturerID": 1,
+    "ModuleID": 53
+  },
+  {
+    "ClassID": 3,
+    "LecturerID": 1,
+    "ModuleID": 54
+  },
+  {
+    "ClassID": 4,
+    "LecturerID": 1,
+    "ModuleID": 55
+  },
+  {
+    "ClassID": 5,
+    "LecturerID": 1,
+    "ModuleID": 56
+  },
+  {
+    "ClassID": 6,
+    "LecturerID": 1,
+    "ModuleID": 57
+  },
+  {
+    "ClassID": 7,
+    "LecturerID": 11,
+    "ModuleID": 52
+  },
+  {
+    "ClassID": 8,
+    "LecturerID": 11,
+    "ModuleID": 53
+  },
+  {
+    "ClassID": 9,
+    "LecturerID": 11,
+    "ModuleID": 54
+  },
+  {
+    "ClassID": 10,
+    "LecturerID": 11,
+    "ModuleID": 55
+  },
+  {
+    "ClassID": 11,
+    "LecturerID": 11,
+    "ModuleID": 56
+  },
+  {
+    "ClassID": 12,
+    "LecturerID": 11,
+    "ModuleID": 57
+  },
+  {
+    "ClassID": 13,
+    "LecturerID": 12,
+    "ModuleID": 58
+  },
+  {
+    "ClassID": 14,
+    "LecturerID": 12,
+    "ModuleID": 59
+  },
+  {
+    "ClassID": 15,
+    "LecturerID": 12,
+    "ModuleID": 60
+  },
+  {
+    "ClassID": 16,
+    "LecturerID": 12,
+    "ModuleID": 61
+  },
+  {
+    "ClassID": 17,
+    "LecturerID": 12,
+    "ModuleID": 62
+  },
+  {
+    "ClassID": 18,
+    "LecturerID": 13,
+    "ModuleID": 58
+  },
+  {
+    "ClassID": 19,
+    "LecturerID": 13,
+    "ModuleID": 59
+  },
+  {
+    "ClassID": 20,
+    "LecturerID": 13,
+    "ModuleID": 60
+  },
+  {
+    "ClassID": 21,
+    "LecturerID": 13,
+    "ModuleID": 61
+  },
+  {
+    "ClassID": 22,
+    "LecturerID": 13,
+    "ModuleID": 62
+  },
+  {
+    "ClassID": 23,
+    "LecturerID": 11,
+    "ModuleID": 63
+  },
+  {
+    "ClassID": 24,
+    "LecturerID": 4,
+    "ModuleID": 64
+  },
+  {
+    "ClassID": 25,
+    "LecturerID": 7,
+    "ModuleID": 64
+  },
+  {
+    "ClassID": 26,
+    "LecturerID": 6,
+    "ModuleID": 65
+  },
+  {
+    "ClassID": 27,
+    "LecturerID": 7,
+    "ModuleID": 65
+  },
+  {
+    "ClassID": 28,
+    "LecturerID": 11,
+    "ModuleID": 66
+  },
+  {
+    "ClassID": 29,
+    "LecturerID": 1,
+    "ModuleID": 66
+  },
+  {
+    "ClassID": 30,
+    "LecturerID": 2,
+    "ModuleID": 67
+  },
+  {
+    "ClassID": 31,
+    "LecturerID": 16,
+    "ModuleID": 68
+  },
+  {
+    "ClassID": 32,
+    "LecturerID": 16,
+    "ModuleID": 69
+  },
+  {
+    "ClassID": 33,
+    "LecturerID": 16,
+    "ModuleID": 70
+  },
+  {
+    "ClassID": 34,
+    "LecturerID": 16,
+    "ModuleID": 71
+  },
+  {
+    "ClassID": 35,
+    "LecturerID": 16,
+    "ModuleID": 72
+  },
+  {
+    "ClassID": 36,
+    "LecturerID": 9,
+    "ModuleID": 73
+  },
+  {
+    "ClassID": 37,
+    "LecturerID": 9,
+    "ModuleID": 74
+  },
+  {
+    "ClassID": 38,
+    "LecturerID": 9,
+    "ModuleID": 75
+  },
+  {
+    "ClassID": 39,
+    "LecturerID": 9,
+    "ModuleID": 76
+  },
+  {
+    "ClassID": 40,
+    "LecturerID": 9,
+    "ModuleID": 77
+  },
+  {
+    "ClassID": 41,
+    "LecturerID": 9,
+    "ModuleID": 78
+  },
+  {
+    "ClassID": 42,
+    "LecturerID": 10,
+    "ModuleID": 73
+  },
+  {
+    "ClassID": 43,
+    "LecturerID": 10,
+    "ModuleID": 74
+  },
+  {
+    "ClassID": 44,
+    "LecturerID": 10,
+    "ModuleID": 75
+  },
+  {
+    "ClassID": 45,
+    "LecturerID": 10,
+    "ModuleID": 76
+  },
+  {
+    "ClassID": 46,
+    "LecturerID": 10,
+    "ModuleID": 77
+  },
+  {
+    "ClassID": 47,
+    "LecturerID": 10,
+    "ModuleID": 78
+  },
+  {
+    "ClassID": 48,
+    "LecturerID": 4,
+    "ModuleID": 79
+  },
+  {
+    "ClassID": 49,
+    "LecturerID": 6,
+    "ModuleID": 79
+  },
+  {
+    "ClassID": 50,
+    "LecturerID": 7,
+    "ModuleID": 79
+  }
+]);
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.course.drop();
+
+// Insert a few documents into the sales collection.
+db.course.insertMany(
+   
+[
+  {
+    "CourseID": 1,
+    "CourseName": "Economics"
+  },
+  {
+    "CourseID": 2,
+    "CourseName": "Politics"
+  },
+  {
+    "CourseID": 3,
+    "CourseName": "Business"
+  },
+  {
+    "CourseID": 4,
+    "CourseName": "Anime"
+  },
+  {
+    "CourseID": 5,
+    "CourseName": "Particle Physics"
+  },
+  {
+    "CourseID": 6,
+    "CourseName": "Quantum Physics"
+  },
+  {
+    "CourseID": 7,
+    "CourseName": "Biology"
+  },
+  {
+    "CourseID": 8,
+    "CourseName": "Chemistry"
+  },
+  {
+    "CourseID": 9,
+    "CourseName": "Zombiology"
+  },
+  {
+    "CourseID": 10,
+    "CourseName": "English Literature"
+  },
+  {
+    "CourseID": 11,
+    "CourseName": "History"
+  },
+  {
+    "CourseID": 12,
+    "CourseName": "Fine Art"
+  },
+  {
+    "CourseID": 13,
+    "CourseName": "Deep-Space Radar Telemetry"
+  }
+ 
+]);

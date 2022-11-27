@@ -1,0 +1,14 @@
+// shows a list of all the available databases withing the MongoDB server.
+show dbs
+
+//creates a database called Anime then a collection called characters.
+use ("Anime");
+db.createCollection('characters')
+
+db.characters.insertMany([{
+
+}
+])
+
+
+
