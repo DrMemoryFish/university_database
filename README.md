@@ -2,31 +2,33 @@
 Data Academy HLT
 
 Week 1:
-Introduction
+Introduction (Done)
 
 Week 02 (SQL 1):
-Core Learning – Creating a Database (Done)
-Core Learning – Retrieving Data (Done)
-Core Learning – Calculations (Done)
-Core Learning – Database Functions (Done)
-Portfolio Task – Databases (Done)
-Flipped Learning – Joining tables
-Enrichment – SQL for Data Science
-Technology – GitHub (Done)
-Wellbeing – Health & Safety whilst working from home
-Soft Skills – Time Management
-Employability – Updating your CV
+Core Learning â€“ Creating a Database (Done)
+Core Learning â€“ Retrieving Data (Done)
+Core Learning â€“ Calculations (Done)
+Core Learning â€“ Database Functions (Done)
+Portfolio Task â€“ Databases (Done)
+Flipped Learning â€“ Joining tables
+Enrichment â€“ SQL for Data Science
+Technology â€“ GitHub (Done)
+Wellbeing â€“ Health & Safety whilst working from home
+Soft Skills â€“ Time Management
+Employability â€“ Updating your CV
 
 Week 03(SQL 2):
 
-Core Learning – Subqueries
-Core Learning – Working with Null Values
-Core Learning – Grouping Data
-Core Learning – Joins
-Portfolio Task – SQL Mini Projects
-Flipped Learning – MongoDB 
-Enrichment – Pros and cons of SQL 
-Technology – Flow Diagrams and Pseudocode 
-Wellbeing – Health & Safety eye care
-Soft Skills – Team Work 
-Employability – LinkedIn profile
+Core Learning â€“ Subqueries (Done)
+Core Learning â€“ Working with Null Values (Done)
+Core Learning â€“ Grouping Data (Done)
+Core Learning â€“ Joins (Done)
+Portfolio Task â€“ SQL Mini Projects
+Flipped Learning â€“ MongoDB 
+Enrichment â€“ Pros and cons of SQL 
+Technology â€“ Flow Diagrams and Pseudocode 
+Wellbeing â€“ Health & Safety eye care
+Soft Skills â€“ Team Work 
+Employability â€“ LinkedIn profile
+
+Week 03
