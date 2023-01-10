@@ -976,7 +976,9 @@ db.student.insertMany([
   }
  
 ]);
+
 db.class.drop();
+
 db.class.insertMany([
   {
     "ClassID": 1,
@@ -1229,6 +1231,7 @@ db.class.insertMany([
     "ModuleID": 79
   }
 ]);
+
 // The drop() command destroys all data from a collection.
 // Make sure you run it against the correct database and collection.
 db.course.drop();
@@ -1291,3 +1294,18 @@ db.course.insertMany(
   }
  
 ]);
+
+//Find all documents from the application collection and sort by studentID.
+db.application.find().sort({studentID: 1})
+
+//Find all the documents from the student collection which CourseID 4.
+db.student.find({CourseID:4})
+
+//Find all the documents from the student collection which CourseID 5 and Forenames is Joe.
+db.student.find({CourseID: 5, Forenames: "Joe"})
+
+//Find all the documents from the student collection which CourseID 5 or Firstname is "Joe".
+db.student.find({$or: [{CourseID: 5}, {Forenames: 'Joe'}]})
+
+//In the class collection, count the number of LecturerID which is equal to 11.
+db.collection.find({LecturerID: 11}).count()

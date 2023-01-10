@@ -1,0 +1,315 @@
+// shows a list of databases
+show dbs
+
+//creates a database called Trivia
+use ("Trivia");
+//creates a database called Trivia
+db.createCollection("Furniture")
+
+db.Furniture.insertMany([
+    {
+        name: "sofa",
+        color: "red",
+        material: "leather",
+        style: "modern",
+        size: "large",
+        price: 1000
+    },
+    {
+        name: "table",
+        color: "brown",
+        material: "wood",
+        style: "antique",
+        size: "medium",
+        price: 500
+    },
+    {
+        name: "chair",
+        color: "black",
+        material: "plastic",
+        style: "contemporary",
+        size: "small",
+        price: 200
+    },
+    {
+        name: "lamp",
+        color: "white",
+        material: "metal",
+        style: "vintage",
+        size: "small",
+        price: 150
+    },
+    {
+        name: "bed",
+        color: "beige",
+        material: "wooden",
+        style: "traditional",
+        size: "king",
+        price: 1500
+    },
+    {
+        name: "bookshelf",
+        color: "walnut",
+        material: "wood",
+        style: "modern",
+        size: "large",
+        price: 800
+    },
+    {
+        name: "coffee table",
+        color: "black",
+        material: "glass",
+        style: "contemporary",
+        size: "medium",
+        price: 400
+    },
+    {
+        name: "desk",
+        color: "white",
+        material: "wood",
+        style: "traditional",
+        size: "large",
+        price: 700
+    },
+    {
+        name: "ottoman",
+        color: "gray",
+        material: "leather",
+        style: "modern",
+        size: "small",
+        price: 300
+    },
+    {
+        name: "armchair",
+        color: "navy blue",
+        material: "fabric",
+        style: "contemporary",
+        size: "medium",
+        price: 450
+    }
+])
+
+db.createCollection("Paintings")
+
+db.Paintings.insertMany([
+    {
+        title: "The Starry Night",
+        artist: "Vincent Van Gogh",
+        year: 1889,
+        medium: "oil on canvas",
+        style: "post-impressionism",
+        size: "29 x 36 in",
+        price: 125000000
+    },
+    {
+        title: "The Mona Lisa",
+        artist: "Leonardo Da Vinci",
+        year: 1503,
+        medium: "oil on wood",
+        style: "Renaissance",
+        size: "30 x 21 in",
+        price: 70000000
+    },
+    {
+        title: "The Last Supper",
+        artist: "Leonardo Da Vinci",
+        year: 1495,
+        medium: "tempera on gesso",
+        style: "Renaissance",
+        size: "15 x 29 in",
+        price: 45000000
+    },
+    {
+        title: "The Sistine Chapel Ceiling",
+        artist: "Michelangelo",
+        year: 1508,
+        medium: "fresco",
+        style: "Renaissance",
+        size: "150 x 40 in",
+        price: 30000000
+    },
+    {
+        title: "The Scream",
+        artist: "Edvard Munch",
+        year: 1893,
+        medium: "oil, tempera, pastel on cardboard",
+        style: "expressionism",
+        size: "91 x 73 cm",
+        price: 119000000
+    },
+    {
+        title: "The Night Watch",
+        artist: "Rembrandt",
+        year: 1642,
+        medium: "oil on canvas",
+        style: "Baroque",
+        size: "14 x 11 ft",
+        price: 200000000
+    },
+    {
+        title: "The Kiss",
+        artist: "Gustav Klimt",
+        year: 1908,
+        medium: "oil, gold leaf on canvas",
+        style: "Modernism",
+        size: "1.62 x 1.62 m",
+        price: 135000000
+    },
+    {
+        title: "Guernica",
+        artist: "Pablo Picasso",
+        year: 1937,
+        medium: "oil on canvas",
+        style: "Cubism",
+        size: "11 x 25.6 ft",
+        price: 150000000
+    },
+    {
+        title: "Dance",
+        artist: "Henri Matisse",
+        year: 1910,
+        medium: "oil on canvas",
+        style: "Fauvism",
+        size: "8.6 x 13 ft",
+        price: 200000000
+    },
+    {
+        title: "A Sunday Afternoon on the Island of La Grande Jatte",
+        artist: "Georges Seurat",
+        year: 1886,
+        medium: "oil on canvas",
+        style: "Pointillism",
+        size: "6.5 x 10 ft",
+        price: 250000000
+    }
+])
+
+db.createCollection("Books")
+
+db.Books.insertMany([
+    {
+        title: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        year: 1960,
+        genre: "Fiction",
+        language: "English",
+        pages: 281,
+        price: 8.99
+    },
+    {
+        title: "1984",
+        author: "George Orwell",
+        year: 1949,
+        genre: "Fiction",
+        language: "English",
+        pages: 326,
+        price: 8.99
+    },
+    {
+        title: "Pride and Prejudice",
+        author: "Jane Austen",
+        year: 1813,
+        genre: "Fiction",
+        language: "English",
+        pages: 279,
+        price: 8.99
+    },
+    {
+        title: "The Catcher in the Rye",
+        author: "J.D. Salinger",
+        year: 1951,
+        genre: "Fiction",
+        language: "English",
+        pages: 277,
+        price: 8.99
+    },
+    {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        year: 1925,
+        genre: "Fiction",
+        language: "English",
+        pages: 180,
+        price: 8.99
+    },
+    {
+        title: "The Lord of the Rings",
+        author: "J.R.R. Tolkien",
+        year: 1954,
+        genre: "Fantasy",
+        language: "English",
+        pages: 1178,
+        price: 14.99
+    },
+    {
+        title: "The Hitchhiker's Guide to the Galaxy",
+        author: "Douglas Adams",
+        year: 1979,
+        genre: "Science Fiction",
+        language: "English",
+        pages: 224,
+        price: 10.99
+    },
+    {
+        title: "Harry Potter and the Sorcerer's Stone",
+        author: "J.K. Rowling",
+        year: 1997,
+        genre: "Fantasy",
+        language: "English",
+        pages: 309,
+        price: 12.99
+    },
+    {
+        title: "The Hobbit",
+        author: "J.R.R. Tolkien",
+        year: 1937,
+        genre: "Fantasy",
+        language: "English",
+        pages: 304,
+        price: 10.99
+    },
+    {
+        title: "The Little Prince",
+        author: "Antoine de Saint-Exupéry",
+        year: 1943,
+        genre: "Fiction",
+        language: "French",
+        pages: 96,
+        price: 11.
+
+        
+        //Search for one of documents passed on a index: 
+        
+        db.Furniture.findOne({name: "sofa"})
+
+//Update a different collection: 
+
+db.Paintings.updateOne({title: "The Starry Night"}, {$set: {price: 130000000}})
+
+//Delete a different collection:
+
+db.Books.deleteMany({genre: "Fantasy"})
+
+
+Core Learning 2
+
+1
+use ("uni");
+db.student.find({ CourseID: 4 })
+
+2.
+use ("uni");
+db.student.find({ CourseID: 5 }, {Forenames: 'Joe'})
+
+3.
+use ("uni");
+db.student.find({$or:[{ CourseID: 5}, {Forenames: 'Joe' }]})
+
+4.
+use ("uni");
+db.application.find().sort({ StudentID: 1 }) 
+
+5.
+use("uni");
+db.class.find({ LecturerID: 11 }).count()
+
