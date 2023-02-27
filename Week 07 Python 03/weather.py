@@ -31,16 +31,23 @@ def get_country_code(country_name):
         print(f"Could not find country code for {country_name}")
         return ""
 
-city = input('Enter city: ')
-country = input('Enter country: ')
+while True:
+    city = input('Enter city: ')
+    country = input('Enter country: ')
 
-country_code = get_country_code(country)
+    country_code = get_country_code(country)
 
-if not country_code:
-    print("Please enter a valid country name or code")
-else:
+    if not country_code:
+        print("Please enter a valid country name or code")
+        continue
+
     base_url = f"http://api.openweathermap.org/data/2.5/weather?appid={API_KEY}&q={city},{country_code}&units=metric"
 
     weather_data = requests.get(base_url).json()
 
+    if weather_data.get("cod") == "404":
+        print(f"Could not find weather data for {city}, {country}")
+        continue
+
     pprint(weather_data)
+    break
